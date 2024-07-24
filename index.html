@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta charset="utf-8" />
+    <link rel="icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <style>
+    body {
+      background: radial-gradient(circle at top left, #9c27b0, #ff9800);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    noscript {
+      color:rgb(247, 247, 247);
+      text-shadow:
+       0px 0px 1px rgb(26, 26, 26),
+     -1px -1px 1px rgb(26, 26, 26),  
+      1px -1px 1px rgb(26, 26, 26),
+      -1px 1px 1px rgb(26, 26, 26),
+       1px 1px 1px rgb(26, 26, 26);
+      font-weight: bold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    } 
+    .noscript-h1 {
+      margin-top: 20px;
+      margin-bottom: 15px;
+      font-size: 300%;
+    }
+    .noscript-h2 {
+      margin-top: 15px;
+      font-size: 200%;
+    }
+    .noscript-h3 {
+      margin-top: 15px;
+      margin-bottom: 25px;
+      font-size: 250%;
+    }
+    .noscript-p {
+      color:rgb(247, 247, 247);
+    }
+    .noscript-app-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .noscript-app-backdrop {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 0px 40px;
+      border-radius: 16px;
+      border: 1px solid black;
+      box-shadow: 0 0 15px black;
+      margin-top: 15px;
+      max-width: fit-content;
+    }
+    </style>
+    <title>Graph Algorithm Game</title>
   </head>
   <body>
-    <div data-js="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <main>
+        <div class="noscript-app-container">
+          <div class="noscript-app-backdrop">
+            <h1 class="noscript-h1">Graph Algorithm Game</h1>
+            <h2 class="noscript-h2">A Browser Game Visualizing Graph Algorithms Made In React</h2>
+            <p class="noscript-p">
+              This  is not only a pathfinding visualizer, but also a game. Multiple pathfinding algorithms will battle it out on a randomized grid, and the game is in correctly guessing which contender will reach the Goal Node first!
+              <br />
+              <br />
+              The six  algorithms implemented in this app are:
+              <ol>
+                <li>Breadth First Search</li>
+                <li>Depth First Search</li>
+                <li>Dijkstra's Algorithm</li>
+                <li>A-Star Search</li>
+                <li>Greedy Best-First Search</li>
+                <li>Bidirectional Breadth First Search</li>
+              </ol>
+              You can read more about each algorithm by clicking the 'Information' button in the app.</p>
+            </p>
+            <h3 class="noscript-h3">Enable JavaScript To Play Pathfinding Race Now</h3>
+          </div>
+        </div>
+      </main>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
   </body>
 </html>
