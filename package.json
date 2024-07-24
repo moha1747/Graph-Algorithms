@@ -1,5 +1,6 @@
 {
-  "name": "Graph-Algorithms-game",
+  "homepage": "moha1747.github.io/Graph-Algorithms",
+  "name": "Graph-Algorithms",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
